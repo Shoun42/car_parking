@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
 void main(){
   runApp(MyApp());
@@ -13,9 +15,38 @@ class MyApp extends StatelessWidget {
       designSize: const Size(430, 932),
       minTextAdapt: true,
       splitScreenMode: true,
+      builder: (_, child){
+        return GetMaterialApp(
+          debugShowCheckedModeBanner: false,
+
+          theme: ThemeData(
+            textTheme: TextTheme(
+              labelSmall: TextStyle(
+                color: Colors.grey,
+                fontSize: 16.sp,
+                fontWeight: FontWeight.w600,
+              ),
+              labelMedium: TextStyle(
+                color: Colors.white,
+                fontSize: 16.sp,
+                fontWeight: FontWeight.w500,
+
+              ),
+        labelLarge: TextStyle(
+        color: Colors.white,
+        fontSize: 32.sp,
+        fontWeight: FontWeight.w700,
+
+            ),
+          ),
+
+
+          ),
 
 
 
+        );
+      },
 
     );
   }

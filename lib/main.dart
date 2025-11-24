@@ -1,3 +1,4 @@
+import 'package:car_parking/routes/app_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,30 +19,8 @@ class MyApp extends StatelessWidget {
       builder: (_, child){
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
-
-          theme: ThemeData(
-            textTheme: TextTheme(
-              labelSmall: TextStyle(
-                color: Colors.grey,
-                fontSize: 16.sp,
-                fontWeight: FontWeight.w600,
-              ),
-              labelMedium: TextStyle(
-                color: Colors.white,
-                fontSize: 16.sp,
-                fontWeight: FontWeight.w500,
-
-              ),
-        labelLarge: TextStyle(
-        color: Colors.white,
-        fontSize: 32.sp,
-        fontWeight: FontWeight.w700,
-
-            ),
-          ),
-
-
-          ),
+          initialRoute: AppRoutes.initialPage,
+          getPages: AppRoutes.routes,
 
 
 

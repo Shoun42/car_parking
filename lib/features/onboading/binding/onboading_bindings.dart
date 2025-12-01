@@ -7,5 +7,5 @@ class OnboadingBinding extends Bindings{
   @override
   void dependencies() {
     // TODO: implement dependencies
-    Get.put(OboadingOneController);
+    Get.put(OnboadingOneController);
   }}

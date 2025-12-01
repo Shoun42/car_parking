@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 
 import '../contollar/oboading_controller.dart';
 
-class OnboadingOneScreen extends GetView<OboadingOneController> {
+class OnboadingOneScreen extends GetView<OnboadingOneController> {
   const OnboadingOneScreen({super.key});
 
   @override
@@ -35,12 +35,17 @@ class OnboadingOneScreen extends GetView<OboadingOneController> {
               SizedBox(height: 76.h,),
               Center(child: Image.asset(ImagePath.onboading_One)),
               Padding(padding: EdgeInsets.symmetric(vertical: 20),
-                child: Text("Why Choose Us", style: theme.labelLarge),
+                child: Text(
+                  "Why Choose Us",
+                  style: theme.labelLarge!.copyWith(color: Colors.white),
+                ),
+
               ),
               Text(
                 "We make parking easy, secure, and stress-free. Whether you're driving a car or a truck, find and reserve reliable parking spots in real-time, wherever you are. With our simple booking and payment system, your parking experience is just a tap away!",
-                style: theme.labelMedium,
+                style: theme.labelMedium!.copyWith(color: Colors.white),
               ),
+
               SizedBox(height: 67.h,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

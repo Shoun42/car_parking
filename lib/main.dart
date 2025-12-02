@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
+import 'features/onboading/view/onboading_three_screen.dart';
+import 'features/onboading/view/onboading_two_screen.dart';
+
 void main(){
   runApp(MyApp());
 }
@@ -21,8 +24,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: AppRoutes.initialPage,
           getPages: AppRoutes.routes,
-
-
+          //home: OnboadingThreeScreen(),
 
         );
       },

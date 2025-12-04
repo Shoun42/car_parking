@@ -50,10 +50,9 @@ class OnboadingOneScreen extends GetView<OnboadingOneController> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Image.asset(ImagePath.toogle),
-                  CommonNextButton(ontap: () {
-                    controller.goToAnotherOnboadingScreen();
-                  },)
+                  InkWell(
+                    child: CommonNextButton(ontap: ()=>controller.goToAnotherOnboadingScreen()),
+                  )
                 ],
               )
             ],

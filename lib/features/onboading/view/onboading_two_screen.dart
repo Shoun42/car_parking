@@ -1,8 +1,10 @@
 import 'package:car_parking/common/utils/app_color/app_color.dart';
+import 'package:car_parking/features/onboading/widgths/button_widgth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
+import '../../../common/utils/Image_path/image_path.dart';
 import '../contollar/oboading_controller.dart';
 
 class OnboadingTwoScreen extends GetView<OnboadingOneController> {
@@ -31,10 +33,25 @@ class OnboadingTwoScreen extends GetView<OnboadingOneController> {
         child: Column(
           children: [
             SizedBox(height: 291.h,),
+            Image.asset(ImagePath.onboading_Two),
+            Padding(padding: const EdgeInsets.symmetric(vertical: 20)),
+
+
+            Text(
+              "With VIP ME, parking has never been easier. Whether you're driving a car or a truck, quickly discover secure, available parking spots nearby, reserve them in real-time, and park with peace of mind. Save time, reduce stress, and never worry about finding parking again!",
+              style: theme.labelMedium,
+            ),
+            SizedBox(height: 291.h,),
+
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
 
+                Image.asset(ImagePath.toogle),
+                CommonNextButton(ontap: () {
+                  controller.secondOnboadingToNext();
+                }),
               ],
             )
           ],

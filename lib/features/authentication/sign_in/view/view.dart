@@ -10,7 +10,7 @@ class SignInView extends GetView<SignInController> {
     return Scaffold(
       body: ElevatedButton(onPressed: (){
         controller.gotoNextPage();
-      }, child:Text("Next pagee")),
+      }, child:Text("Next ")),
     );
   }
 }

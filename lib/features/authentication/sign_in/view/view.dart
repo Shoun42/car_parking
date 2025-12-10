@@ -24,7 +24,6 @@ class SignInView extends GetView<SignInController> {
                 Image.asset(ImagePath.splashlogo),
                 SizedBox(height: 30.h,),
 
-
               ],
             ),
           )

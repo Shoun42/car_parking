@@ -28,9 +28,6 @@ class SignInView extends GetView<SignInController> {
             ),
           )
 
-
-
-
         ],
       ),
       ),

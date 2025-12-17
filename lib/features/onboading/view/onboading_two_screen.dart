@@ -39,7 +39,7 @@ class OnboadingTwoScreen extends GetView<OnboadingOneController> {
 
             Text(
               "With VIP ME, parking has never been easier. Whether you're driving a car or a truck, quickly discover secure, available parking spots nearby, reserve them in real-time, and park with peace of mind. Save time, reduce stress, and never worry about finding parking again!",
-              style: theme.labelMedium,
+              style: theme.labelMedium!.copyWith(color: Colors.white),
             ),
             SizedBox(height: 291.h,),
 

@@ -35,12 +35,12 @@ class OnboadingThreeScreen extends GetView <OnboadingOneController> {
             SizedBox(height: 76.h,),
             Image.asset(ImagePath.onboading_Three),
             Padding(padding: const EdgeInsets.symmetric(vertical: 20)
-            , child: Text("Real-Time Parking Updates", style: theme.labelLarge),
+            , child: Text("Real-Time Parking Updates",  style: theme.labelMedium!.copyWith(color: Colors.white),),
               
             ),
             Text(
               "With VIP ME, you can view live parking availability in your area. Get real-time updates on available spots, ensuring you always find a safe and convenient place to park—no more wasted time searching!",
-              style: theme.labelMedium,
+              style: theme.labelMedium!.copyWith(color: Colors.white),
             ),
             SizedBox(height: 180.h,),
             Row(

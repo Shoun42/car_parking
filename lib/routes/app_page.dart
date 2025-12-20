@@ -1,7 +1,9 @@
 
 
 import 'package:car_parking/features/authentication/sign_in/bindings/sign_in_bindings.dart';
-import 'package:car_parking/features/authentication/sign_in/view/sign_in_two.dart';
+import 'package:car_parking/features/authentication/sign_in/view/forget_password.dart';
+import 'package:car_parking/features/authentication/sign_in/view/otp_screen.dart';
+
 import 'package:car_parking/features/authentication/sign_in/view/view.dart';
 import 'package:car_parking/features/onboading/binding/onboading_bindings.dart';
 import 'package:car_parking/features/onboading/view/onboading_one_screen.dart';
@@ -23,7 +25,10 @@ static final routes=[
   GetPage(name: AppPage.onBoadigTwoPage, page: ()=>OnboadingTwoScreen(),binding: OnboadingBinding()),
   GetPage(name: AppPage.onBoadingThreePage, page: ()=>OnboadingThreeScreen(),binding: OnboadingBinding()),
   GetPage(name: AppPage.sign_in, page: ()=>SignInView(),binding: SignInBindins()),
-  GetPage(name: AppPage.sign_in_two, page: ()=>SignInTwo(),binding: SignInBindins())
+  GetPage(name: AppPage.forget_password, page: ()=>ForgetPassword(),binding: SignInBindins())
+,  GetPage(name: AppPage.otp_screeen, page: ()=>OtpScreen(),binding: SignInBindins()),
+
+
 
 ];
 }

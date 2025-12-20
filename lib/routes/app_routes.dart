@@ -4,6 +4,8 @@ class AppPage {
   static final String onBoadigTwoPage="/onboading_two";
   static final String onBoadingThreePage = '/onboading_three';
   static final String sign_in = '/sign_in';
-  static final String sign_in_two ='/sign_in_two';
+  static final String otp_screeen ='/OtpScreen';
+  static final String forget_password ='/ForgetPassword';
+
 
 }

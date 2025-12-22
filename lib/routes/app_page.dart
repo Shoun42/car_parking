@@ -3,6 +3,7 @@
 import 'package:car_parking/features/authentication/sign_in/bindings/sign_in_bindings.dart';
 import 'package:car_parking/features/authentication/sign_in/view/forget_password.dart';
 import 'package:car_parking/features/authentication/sign_in/view/otp_screen.dart';
+import 'package:car_parking/features/authentication/sign_in/view/reset_password.dart';
 
 import 'package:car_parking/features/authentication/sign_in/view/view.dart';
 import 'package:car_parking/features/onboading/binding/onboading_bindings.dart';
@@ -12,6 +13,8 @@ import 'package:car_parking/features/splash/view/splash_view.dart';
 import 'package:car_parking/routes/app_routes.dart';
 import 'package:get/get.dart';
 
+import '../features/authentication/sign_in/controller/Sign_up_controller.dart';
+import '../features/authentication/sign_in/view/sign_up_screen.dart';
 import '../features/onboading/view/onboading_two_screen.dart';
 import '../features/splash/binding/splash_bindings.dart';
 
@@ -27,6 +30,9 @@ static final routes=[
   GetPage(name: AppPage.sign_in, page: ()=>SignInView(),binding: SignInBindins()),
   GetPage(name: AppPage.forget_password, page: ()=>ForgetPassword(),binding: SignInBindins())
 ,  GetPage(name: AppPage.otp_screeen, page: ()=>OtpScreen(),binding: SignInBindins()),
+
+  GetPage(name:AppPage.reset_password, page:()=>ResetPassword(),binding: SignInBindins()),
+  GetPage(name:AppPage.sign_up_screen, page:()=>SignUpScreen(),binding: SignInBindins()),
 
 
 

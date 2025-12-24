@@ -3,11 +3,14 @@ import 'dart:async';
 import 'package:car_parking/common/utils/Image_path/image_path.dart';
 import 'package:car_parking/common/utils/app_color/app_color.dart';
 import 'package:car_parking/features/authentication/sign_in/controller/sign_in_controller.dart';
+import 'package:car_parking/features/authentication/sign_in/view/reset_password.dart';
+import 'package:car_parking/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import '../controller/forget_controller.dart';
+import '../widget/primary_button.dart';
 
 class OtpScreen extends GetView<SignInController> {
   OtpScreen({super.key});
@@ -55,12 +58,15 @@ class OtpScreen extends GetView<SignInController> {
 
             ),
 
-            SizedBox(height: 20.h),
+            SizedBox(height: 300.h),
 
             /// Resend OTP time
 
             /// Verify OTP button
-          ElevatedButton(onPressed: (){}, child: Text(""))
+            PrimaryButton(theme: theme, title: "Verify", ontap: () {
+              controller.otpToResetPage();
+            },),
+
           ],
         ),
       ),

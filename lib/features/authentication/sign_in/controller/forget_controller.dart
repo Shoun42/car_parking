@@ -7,7 +7,9 @@ class ForgetController extends GetxController{
     Get.toNamed(AppPage.otp_screeen);
 
   }
-
-
+ void ResetPassword()
+ {
+   Get.toNamed(AppPage.home);
+ }
   
 }

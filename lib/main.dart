@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
+import 'features/authentication/sign_in/view/forget_password.dart';
 import 'features/onboading/view/onboading_three_screen.dart';
 import 'features/onboading/view/onboading_two_screen.dart';
 
@@ -23,8 +24,8 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           initialRoute: AppRoutes.initialPage,
-          getPages: AppRoutes.routes,
-          //home: OnboadingThreeScreen(),
+         getPages: AppRoutes.routes,
+          //home: ForgetPassword(),
 
         );
       },

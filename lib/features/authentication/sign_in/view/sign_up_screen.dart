@@ -1,18 +1,19 @@
 
-import 'package:car_parking/common/utils/app_color/app_color.dart';
+
 import 'package:car_parking/features/authentication/sign_in/view/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 import '../../../../common/utils/Image_path/image_path.dart';
-import '../controller/sign_in_controller.dart';
+import '../../../../common/utils/app_color/app_color.dart';
+import '../controller/Sign_up_controller.dart';
 import '../widget/common_text_form_Field.dart';
 import '../widget/primary_button.dart';
 
-
-class SignInView extends GetView<SignInController> {
-  const SignInView({super.key});
+class SignUpScreen extends GetView<SignUpController>
+ {
+  const SignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,7 @@ class SignInView extends GetView<SignInController> {
                     children: [
                       Container(),
                       InkWell(
-                        onTap: ()=>controller.SignUpScreen(),
+                          onTap: ()=>controller.goToSignIn(),
                           child: Text("Forgot Password?",style: theme.labelSmall?.copyWith(color: Colors.white70),))
                     ],
                   ),

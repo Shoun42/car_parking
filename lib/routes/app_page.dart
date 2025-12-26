@@ -34,7 +34,5 @@ static final routes=[
   GetPage(name:AppPage.reset_password, page:()=>ResetPassword(),binding: SignInBindins()),
   GetPage(name:AppPage.sign_up_screen, page:()=>SignUpScreen(),binding: SignInBindins()),
 
-
-
 ];
 }

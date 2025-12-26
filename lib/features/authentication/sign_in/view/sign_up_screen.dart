@@ -15,6 +15,7 @@ class SignUpScreen extends GetView<SignUpController>
  {
   const SignUpScreen({super.key});
 
+
   @override
   Widget build(BuildContext context) {
 
